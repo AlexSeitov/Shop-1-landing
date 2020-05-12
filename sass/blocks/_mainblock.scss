@@ -1,0 +1,128 @@
+.mainblock {
+    position: relative;
+}
+
+.mainblock-slider {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #425948;
+        opacity: 0.3;
+        z-index: 0;
+    }
+}
+
+.mainblock-slider__item {
+    height: 100vh;
+
+    @media (max-width: 575.98px) {
+        height: 214px;
+    }
+}
+
+.mainblock-content {
+    width: 100%;
+    max-width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.mainblock-content__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 1.17;
+    margin-bottom: 20px;
+
+    @media (max-width: 575.98px) {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+}
+
+.mainblock-content__text {
+    font-size: 30px;
+    line-height: 1.66;
+    margin-bottom: 50px;
+
+    @media (max-width: 575.98px) {
+        font-size: 14px;
+        margin-bottom: 22px;
+    }
+}
+
+.mainblock-content__btn {
+    font-size: 14px;
+}
+
+.owl-carousel {
+    position: relative;
+  }
+.owl-dots {
+    display: none;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    @media (max-width: 575.98px) {
+        top: 240px;
+        
+        &::after {
+            width: 30px;
+            height: 30px;
+            top: 22%;
+            border-color: #000;
+        }
+    }
+}
+
+.owl-prev {
+   left: 100px;
+}
+
+.owl-next {
+    right: 100px;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 40px;
+    color: #fff;
+
+    @media (max-width: 575.98px) {
+        font-size: 30px;
+        color: #000;
+    }
+}

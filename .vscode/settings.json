@@ -1,0 +1,32 @@
+{
+    "editor.renderWhitespace": "none",
+    "window.zoomLevel": -2,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        "editor.background": "#202020",
+        "editor.selectionBackground": "#252594"
+    },
+    "editor.parameterHints.enabled": false,
+    "editor.fontSize": 18,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.formats":[
+ 
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ],
+    "css-auto-prefix.enabled": false,
+    "ecsstractor_port.add_comment": false,
+    "auto-rename-tag.activationOnLanguage": [
+    
+        "*"
+    ],
+
+   
+}
