@@ -579,4 +579,126 @@ button {
     color: #000;
   }
 }
+
+.tempor {
+  background-color: #f1f0f0;
+  margin-top: 50px;
+}
+
+.tempor-heading {
+  max-width: 780px;
+  text-align: center;
+  padding: 70px 0 50px;
+  margin: 0 auto;
+}
+
+@media (max-width: 575.98px) {
+  .tempor-heading {
+    padding: 30px 0 10px;
+  }
+}
+
+.tempot-heading__title {
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 575.98px) {
+  .tempot-heading__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tempor-heading__text {
+    font-size: 14px;
+  }
+}
+
+.tempor-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+
+.tempor-content__item {
+  position: relative;
+  width: 33%;
+  height: 234px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .tempor-content__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .tempor-content__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .tempor-content__item:last-child {
+    width: 100%;
+  }
+}
+
+.tempor-content__img-wrap {
+  width: 362px;
+  height: 234px;
+  overflow: hidden;
+}
+
+@media (max-width: 991.98px) {
+  .tempor-content__img-wrap {
+    width: 100%;
+  }
+}
+
+.tempor-content__img {
+  width: 100%;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.tempor-content__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.tempor-content__text-wrap {
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+  width: calc(100% - 30px);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px 18px;
+}
+
+.tempor-content__text {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.tempor-content__text:last-child {
+  font-size: 18px;
+}
+
+.tempor-content__text-link {
+  color: #fff;
+}
+
+.tempor-content__text-link:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */
