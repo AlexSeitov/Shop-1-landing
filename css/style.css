@@ -38,6 +38,7 @@ body {
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
   line-height: 1.25;
   font-size: 36px;
 }
@@ -857,5 +858,53 @@ button {
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
   display: block;
+}
+
+.season {
+  background: url(../img/season/season-bg.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 60px 0 50px;
+}
+
+.season::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 575.98px) {
+  .season {
+    padding: 30px 0 25px;
+  }
+}
+
+.season__column {
+  max-width: 762px;
+  position: relative;
+  z-index: 2;
+}
+
+.season__title {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 575.98px) {
+  .season__title {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .season__text {
+    line-height: 1.6;
+  }
 }
 /*# sourceMappingURL=style.css.map */
