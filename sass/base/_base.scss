@@ -42,6 +42,12 @@ ul li {
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 28px;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .3);
+        border-color: rgba(0, 0, 0, .3);
+    }
 }
 
 button {

@@ -31,9 +31,10 @@
 
 .tempor-content {
     display: flex;
-    justify-content: center;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-bottom: 70px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .tempor-content__item {

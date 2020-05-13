@@ -1,0 +1,135 @@
+.arrivals {
+    padding: 50px 0;
+}
+
+.content-heading {
+    display: flex;
+}
+
+.content-heading__line {
+    font-size: 0;
+    width: 74%;
+    height: 26px;
+    border-bottom: 1px solid #000;
+    margin: 0 100px 0 4px;
+}
+
+.content-title {
+    min-width: 186px;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.content-slider__item {
+    padding: 15px;
+}
+
+.content-slider__img {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.content-slider__img img {
+    width: 100%;
+}
+
+.content-slider__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.content-slider__img:hover .content-slider__add {
+    opacity: 1;
+}
+
+.content-slider__btn {
+    font-size: 16px;
+    padding: 10px 24px;
+    margin-bottom: 22px;
+}
+
+.content-slider__wishlist {
+    position: relative;
+    left: 10px;
+    color: #fff;
+    transition: color .3s ease;
+
+    &:hover {
+        color: #80aaff;
+    }
+
+    &::before {
+        content: "\2665";
+        font-size: 30px;
+        position: absolute;
+        top: -14px;
+        left: -22px;
+        width: 22px;
+        height: 20px;
+    }
+}
+
+.content-slider__discription {
+    font-size: 16px;
+}
+
+.content-slider__price {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.content-slider__price span:first-child {
+    margin-right: 30px;
+}
+
+.content-slider__price span:last-child {
+    font-size: 17px;
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.content-slider .owl-prev,
+.content-slider .owl-next {
+    top: -48px;
+    &::after {
+        width: 30px;
+        height: 30px;
+        top: 34%;
+        border-radius: unset;
+        border-color: #000;
+    } 
+}
+
+.content-slider .owl-prev {
+    left: unset;
+    right: 65px;
+}
+.content-slider .owl-next {
+    right: 15px;
+}
+
+.content-slider .owl-prev span,
+.content-slider .owl-next span {
+    color: #000;
+
+    @media (max-width: 575.98px) {
+        font-size: 40px;
+    }
+}
+
+.owl-carousel .owl-dots.disabled, 
+.owl-carousel .owl-nav.disabled {
+    display: block;
+}

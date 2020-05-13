@@ -9,15 +9,41 @@ $(function() {
 
     // owlcarousel
 
-    $('.owl-carousel').owlCarousel({
+    $('.mainblock-slider').owlCarousel({
         loop:true,
-        margin:10,
+        dots:false,
         nav:true,
         items: 1,
         autoplay:true,
         autoplaySpeed: 2000,
         autoplayTimeout:5000
     });
+
+    $('.content-slider').owlCarousel({
+        loop:true,
+        dots:false,
+        nav:true,
+        autoplay:true,
+        autoplaySpeed: 2000,
+        autoplayTimeout:3000,
+        responsive:{
+            0:{
+                items:1,
+           
+            },
+            576:{
+                items:2,
+             
+            },
+            768:{
+                items:3,
+            },
+            992:{
+                items:4,
+            }
+        }
+   
+    });  
 
     // show search-input
 
