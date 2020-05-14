@@ -46,6 +46,7 @@ ul li {
     transition: all .3s ease;
 
     &:hover {
+        color: #fff;
         background-color: rgba(0, 0, 0, .3);
         border-color: rgba(0, 0, 0, .3);
     }
